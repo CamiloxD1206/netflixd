@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">ZERO TWO</string>
+    <string name="app_name">DARKSIDE</string>
     <string name="user">USUARIO</string>
     <string name="password">CONTRASEÑA</string>
     <string name="login">INGRESAR</string>
@@ -10,4 +10,5 @@
     //--------------------------------
     <string name="ippo">HAJIME NO IPPO</string>
     <string name="descripcion">Hajime no Ippo (はじめの一歩 traducido al español como El primer paso), también conocido como Fighting Spirit y Espíritu de lucha en Hispanoamérica, es un manga sobre boxeo creado por el autor Jyoji Morikawa (森川ジョージ) que además de ser un mangaka, es un mánager de boxeadores entre los que destaca Manabu Fukushima.</string>
+    <string name="salida">SALIR</string>
 </resources>

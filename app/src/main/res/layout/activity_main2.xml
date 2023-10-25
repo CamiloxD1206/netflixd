@@ -5,7 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity2">
+    android:gravity="center"
+    tools:context=".MainActivity2"
+    android:background="@drawable/ippofondo">
 
     <TextView
         android:layout_width="match_parent"
@@ -14,13 +16,14 @@
         android:gravity="center"
         android:textSize="30dp"
         android:textStyle="bold"
-        android:layout_marginTop="100px"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
 
         />
 
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="608dp"
+        android:layout_height="508dp"
         android:layout_gravity="center"
         android:src="@drawable/ippo" />
     <TextView
@@ -29,8 +32,18 @@
         android:text="@string/descripcion"
         android:gravity="center"
         android:textStyle="bold"
-        android:layout_marginTop="7px"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
 
         />
-
+<Button
+    android:id="@+id/botonSalir"
+    android:gravity="center"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:text="@string/salida"
+    android:layout_marginTop="20dp"
+    android:backgroundTint="@color/black"
+    android:textColor="@color/white"
+    />
 </LinearLayout>
