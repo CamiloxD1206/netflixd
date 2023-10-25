@@ -1,79 +1,108 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@drawable/fondodos">
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="200dp"
+        android:background="@drawable/rounded_background"
         android:gravity="center"
         android:text="@string/app_name"
-        android:textColor="@color/red"
+        android:textColor="@color/white"
         android:textSize="30dp"
-        android:textStyle="bold"
-        android:layout_marginTop="30px"/>
+        android:textStyle="bold" />
 
-    <ImageView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="900px"
-        android:gravity="center"
-        android:src="@drawable/netflixpng"
-        android:layout_marginTop="30px"/>
+        android:layout_height="900dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="172dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="300dp"
+        android:background="@drawable/rounded_background_login"
+        android:elevation="8dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="@string/login"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/user"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"/>
+        <EditText
+            android:id="@+id/editTextUsuario"
+            android:hint="user@misena.edu.co"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:textColorHint="@color/grayM"
+            android:textColor="@color/black"
+            android:background="@drawable/rounded_background_edit"
+            android:padding="10dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/password"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/editTextContraseña"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+android:textColor="@color/black"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/rounded_background_edit"
+            android:padding="10dp"
+            />
+
+        <Button
+            android:id="@+id/boton"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="@color/black"
+            android:text="@string/login"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/user"
-        android:textSize="17dp"
-        android:gravity="center"
-        android:layout_marginTop="150px"
-    />
-
-    <EditText
-        android:id="@+id/editTextUsuario"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:layout_marginTop="50px"
-       />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/password"
-
-        android:textSize="17dp"
-        android:gravity="center"
-        android:layout_marginTop="50px"
-        />
-
-
-
-
-    <EditText
-        android:id="@+id/editTextContraseña"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:layout_marginTop="50px"
-         />
-
-    <Button
-        android:id="@+id/boton"
-        android:layout_width="206dp"
-        android:layout_height="59dp"
-        android:layout_marginTop="50px"
-        android:backgroundTint="@color/black"
-        android:gravity="center"
-        android:text="@string/login"
-        android:textSize="15dp"
+        android:layout_marginTop="760dp"
+        android:text="@string/nombre"
+        android:layout_marginLeft="10dp"
         android:textColor="@color/white"/>
-
-
-</LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="780dp"
+        android:text="@string/ficha"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/white"/>
+</RelativeLayout>
