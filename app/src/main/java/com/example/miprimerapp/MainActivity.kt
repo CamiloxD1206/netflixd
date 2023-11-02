@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
 
             if (usuario == "camilo@misena.edu.co" && contraseña == "camilosalazar") {
 
-                val intent = Intent(this, MainActivity2::class.java)
+                val intent = Intent(this, MainActivity3::class.java)
                 startActivity(intent)
 
                 finish()

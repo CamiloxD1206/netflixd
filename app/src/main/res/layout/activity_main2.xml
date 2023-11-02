@@ -10,9 +10,10 @@
     android:background="@drawable/ippofondo">
 
     <TextView
+        android:id="@+id/titulo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/ippo"
+        android:text=""
         android:gravity="center"
         android:textSize="30dp"
         android:textStyle="bold"
@@ -27,14 +28,25 @@
         android:layout_gravity="center"
         android:src="@drawable/ippo" />
     <TextView
+        android:id="@+id/descripcion"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/descripcion"
+        android:text=""
         android:gravity="center"
         android:textStyle="bold"
         android:layout_marginTop="10dp"
         android:textColor="@color/white"
 
+        />
+    <Button
+        android:id="@+id/botondevolver"
+        android:gravity="center"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="@string/botondevolver"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/black"
+        android:textColor="@color/white"
         />
 <Button
     android:id="@+id/botonSalir"
@@ -46,4 +58,5 @@
     android:backgroundTint="@color/black"
     android:textColor="@color/white"
     />
+
 </LinearLayout>
